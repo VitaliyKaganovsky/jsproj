@@ -8,9 +8,12 @@
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
 
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;1,500&family=Inter:wght@500&family=Kanit:wght@500&display=swap');
+
 html {
     line-height: 1.15; /* 1 */
     -webkit-text-size-adjust: 100%; /* 2 */
+    scroll-behavior: smooth
 }
 
 /* Sections
@@ -22,6 +25,7 @@ html {
 
 body {
     margin: 0;
+    padding-top: 50px;
 }
 
 /**
@@ -40,7 +44,11 @@ main {
 h1 {
     font-size: 2em;
     margin: 0.67em 0;
+    font-family: 'Kanit', sans-serif;
+    font-size: 56px;
 }
+
+
 
 /* Grouping content
    ========================================================================== */
@@ -75,6 +83,9 @@ pre {
 
 a {
     background-color: transparent;
+    text-decoration: none;
+    color: black;
+    line-height: 74.2px;
 }
 
 /**
@@ -360,6 +371,16 @@ ul {
     /* Отступ слева в браузере Firefox, Safari, Chrome */
 }
 
+nav{
+    display: flex;
+}
+
+nav>ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 body{
     display: flex;
     flex-direction: column;
@@ -368,10 +389,16 @@ body{
 
 header{
     display: flex;
+    justify-content: space-between;
+    margin-bottom: 70px;
 }
 
 footer{
-    justify-content: space-between; padding-left: 55px; padding-right: 55px
+    justify-content: space-between;
+}
+
+i{
+    font-size: 35px;
 }
 
 header>div{
@@ -386,5 +413,177 @@ header>div{
     width: 1216px;
     padding-left: 12px;
     padding-right: 12px;
-    background-color: blue;
+}
+
+.hero{
+    min-height: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.response{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    color: white;
+}
+
+.response>h2{
+    font-family: 'DM Sans', sans-serif;
+    font-size: 42px;
+    text-align: center;
+}
+
+.response>h3{
+    margin-top: 35px;
+    margin-bottom: 7px;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+}
+
+.response>p{
+    margin-top: 0;
+    color: gray;
+    font-family: 'Inter', sans-serif;
+}
+
+.heroText{
+    max-width: 385px;
+    min-height: 620px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.heroText>p{
+    font-family: 'DM Sans', sans-serif;
+    font-size: 20px;
+    color: gray;
+}
+
+.features{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.features>ul{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.features>ul>li{
+    max-width: 300px;
+    text-align: center;
+}
+
+.features>h2{
+    font-family: 'Kanit', sans-serif;
+    font-size: 57px;
+}
+
+.featuresH3{
+    font-family: 'DM Sans', sans-serif;
+    font-size: 20px;
+}
+
+.featuresPar{
+    font-family: 'DM Sans', sans-serif;
+    font-size: 20px;
+    color: gray;
+}
+
+.navmenu>li{
+    margin-right: 70px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 1);
+}
+
+.navi{
+    font-family: 'DM Sans', sans-serif;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.faq{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(161, 161, 161, 0.1);
+    margin-top: 180px;
+    margin-bottom: 180px;
+    padding-top: 83px;
+    padding-bottom: 43px;
+    box-shadow: 0px 5px 4px 1px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.faq>h3{
+    font-size: 20px;
+}
+
+.faq>p{
+    font-size: 18px;
+    color: gray;
+}
+
+.downloadBlock{
+    justify-content: space-between;
+    background-color: black;
+    padding-top: 40px;
+    margin-bottom: 100px;
+}
+
+.textDownloadBlock{
+    margin-top: 70px;
+    max-width: 650px;
+    max-height: 318px;
+    color: white;
+}
+
+.textDownloadBlock>h2{
+    font-family: 'Kanit', sans-serif;
+    font-size: 50px;
+}
+
+.button{
+    width: 137px;
+    height: 66px;
+    background-color: black;
+    color: white;
+    border-radius: 15px;
+}
+
+.noteDlogo{
+    font-family: 'Kanit', sans-serif;
+    font-size: 60.4px;
+}
+
+#dloadNoted{
+    font-family: 'DM Sans', sans-serif;
+    font-size: 20px;
+}
+
+.usefulInfo>li>ul>li{
+    margin: 0;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+    height: 30px;
+}
+
+.usefulInfo>li>h4{
+    font-family: 'DM Sans', sans-serif;
+    font-size: 14px;
+    color: gray;
+    margin: 0;
+}
+
+.usefulInfo{
+    justify-content: space-around
 }

@@ -7,149 +7,155 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="main.css">
+    <script src="https://kit.fontawesome.com/a819647d1a.js" crossorigin="anonymous"></script>
 </head>
 <body>
 <header class="container">
-    <h2 class="logo">Note.d</h2>
+    <a href="https://vitaliykaganovsky.github.io/jsproj/" class="noteDlogo">Note.d</a>
     <div class="navi">
-        <ul>
-            <li>123</li>
-            <li>123</li>
-            <li>123</li>
-        </ul>
-        <button>123</button>
+        <nav>
+            <ul class="navmenu">
+                <li><a href="#about">About</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#FAQs">FAQs</a></li>
+            </ul>
+        </nav>
+        <button type="button" class="button">Subscribe</button>
     </div>
 </header>
 
 <main>
-    <section class="flex">
-        <div class="hero">
+    <section class="container hero" id="about">
+        <div class="heroText">
             <h1>Enjoy note taking with your friends</h1>
+            <p>Put down your thoughts down in one app, share
+                with your friends and loved ones.</p>
+            <div class="storesBlock">
+                <a href="https://play.google.com/" target="_blank"><img src="img/googlePlayBadge.png" alt="googlePlayDownoadLink"></a>
+                <a href="https://www.apple.com/app-store/" target="_blank"><img src="img/appStoreBadge.png" alt="appStoreDownloadLink"></a>
+            </div>
         </div>
-        <div class="hero_img">
-            <img src="img/74499-circle%201.png" alt="">
-            <img src="img/Rectangle.png" alt="">
-        </div>
+        <img src="img/heroPhone.png" alt="noteDPhone">
     </section>
-    <section>
+    <section class="container features" id="features">
         <h2>Features</h2>
-        <ul class="flex">
+        <ul>
             <li>
-                <img src="" alt="">
-                <h3>Head</h3>
-                <p>Lorem ipsum dolor sit amet.</p>
+                <i class="fa-solid fa-envelope"></i>
+                <h3 class="featuresH3">Share notes with friends</h3>
+                <p class="featuresPar">Whether you have a team of 2 or 200, our shared team inboxes keep everyone on the same page and in the loop.</p>
             </li>
             <li>
-                <img src="" alt="">
-                <h3>Head</h3>
-                <p>Lorem ipsum dolor sit amet.</p>
+                <i class="fa-solid fa-bolt-lightning"></i>
+                <h3 class="featuresH3">Auto completion</h3>
+                <p class="featuresPar">An all-in-one customer service platform that helps you balance everything your customers need to be happy.</p>
             </li>
             <li>
-                <img src="" alt="">
-                <h3>Head</h3>
-                <p>Lorem ipsum dolor sit amet.</p>
+                <i class="fa-solid fa-chart-simple"></i>
+                <h3 class="featuresH3">Manage your notes with friends</h3>
+                <p class="featuresPar">Measure what matters with Untitled’s easy-to-use reports. You can filter, export, and drilldown on the data in a couple clicks.</p>
             </li>
         </ul>
     </section>
-    <section>
-        <img src="" alt="">
-        <h2>I use note.d</h2>
-        <img src="" alt="">
+    <section class="container response">
+        <img src="img/Logomark.png" style="width: 25px; height: 45px;" alt="logo">
+        <h2>I use Note.d for all my note taking when working on a
+            project. I send it over to clients to crosscheck
+            for me</h2>
+        <img src="img/derrickTsorme.png" alt="">
         <h3>Derrick Tsorme</h3>
         <p>Product designer</p>
     </section>
-    <section>
-        <img src="" alt="">
+    <section class="container faq" id="FAQs">
+        <img src="img/FAQsAvatarGroup.png" alt="FAQsAvatars" style="width: 120px; height: 56px;">
         <h3>Do yo have any question?</h3>
         <p>We are available 24/7 to answer any question you have about Note.d</p>
-        <button>Send a message</button>
+        <button type="button" class="button">Send a message</button>
     </section>
-    <section class="flex">
-        <div>
-            <span>Download</span> <strong>Note.d</strong>
+    <section class="flex container downloadBlock">
+        <div class="textDownloadBlock">
+            <span id="dloadNoted">Download <strong>Note.d</strong></span>
             <h2>Join over 20,000+ users and make yourself life easier</h2>
-            <a href=""><img src="" alt="googleplayimage"></a>
-            <a href=""><img src="" alt="appstoreimage"></a>
+            <a href="https://play.google.com/"><img src="img/googlePlayBadgeBW.png" alt="googleplayimage"></a>
+            <a href="https://www.apple.com/app-store/"><img src="img/appStoreBadgeBW.png" alt="appstoreimage"></a>
         </div>
-        <img src="img/Rectangle.png" alt="">
+        <img src="img/phoneCuted.png" alt="phoneWithNoteD">
     </section>
-    <section>
-        <ul class="flex" style="justify-content: space-around">
+    <section class="container">
+        <ul class="flex usefulInfo">
             <li>
                 <h4>Product</h4>
                 <ul>
-                    <li>123</li>
-                    <li>123</li>
-                    <li>123</li>
-                    <li>123</li>
-                    <li>123</li>
-                    <li>123</li>
+                    <li><a href="">Overview</a></li>
+                    <li><a href="">Features</a></li>
+                    <li><a href="">Solutions</a></li>
+                    <li><a href="">Tutorials</a></li>
+                    <li><a href="">Pricing</a></li>
+                    <li><a href="">Releases</a></li>
                 </ul>
             </li>
             <li>
                 <h4>Company</h4>
                 <ul>
-                    <li>123</li>
-                    <li>123</li>
-                    <li>123</li>
-                    <li>123</li>
-                    <li>123</li>
-                    <li>123</li>
+                    <li><a href="">About us</a></li>
+                    <li><a href="">Careers</a></li>
+                    <li><a href="">Press</a></li>
+                    <li><a href="">News</a></li>
+                    <li><a href="">Media kit</a></li>
+                    <li><a href="">Contact</a></li>
                 </ul>
             </li>
             <li>
                 <h4>Resourses</h4>
                 <ul>
-                    <li>123</li>
-                    <li>123</li>
-                    <li>123</li>
-                    <li>123</li>
-                    <li>123</li>
-                    <li>123</li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">Newsletter</a></li>
+                    <li><a href="">Events</a></li>
+                    <li><a href="">Help center</a></li>
+                    <li><a href="">Tutorials</a></li>
+                    <li><a href="">Support</a></li>
                 </ul>
             </li>
             <li>
                 <h4>Use cases</h4>
                 <ul>
-                    <li>123</li>
-                    <li>123</li>
-                    <li>123</li>
-                    <li>123</li>
-                    <li>123</li>
-                    <li>123</li>
+                    <li><a href="">Start ups</a></li>
+                    <li><a href="">Enterprise</a></li>
+                    <li><a href="">Goverment</a></li>
+                    <li><a href="">SaaS</a></li>
+                    <li><a href="">Marketplaces</a></li>
+                    <li><a href="">Ecommerce</a></li>
                 </ul>
             </li>
             <li>
                 <h4>Social</h4>
                 <ul>
-                    <li>123</li>
-                    <li>123</li>
-                    <li>123</li>
-                    <li>123</li>
-                    <li>123</li>
-                    <li>123</li>
+                    <li><a href="">Twitter</a></li>
+                    <li><a href="">LinkedIn</a></li>
+                    <li><a href="">Facebook</a></li>
+                    <li><a href="">GitHub</a></li>
+                    <li><a href="">AngelList</a></li>
+                    <li><a href="">Dribbble</a></li>
                 </ul>
             </li>
             <li>
                 <h4>Legal</h4>
                 <ul>
-                    <li>123</li>
-                    <li>123</li>
-                    <li>123</li>
-                    <li>123</li>
-                    <li>123</li>
-                    <li>123</li>
+                    <li><a href="">Terms</a></li>
+                    <li><a href="">Privacy</a></li>
+                    <li><a href="">Cookies</a></li>
+                    <li><a href="">Licenses</a></li>
+                    <li><a href="">Settings</a></li>
+                    <li><a href="">Contact</a></li>
                 </ul>
             </li>
         </ul>
     </section>
-    <hr style="width: 92%;">
 </main>
 
 <footer class="flex">
-    <h2 class="logo">Note.d</h2>
+    <a href="https://vitaliykaganovsky.github.io/jsproj/" class="noteDlogo">Note.d</a>
     <p>&copy; 2022 Note.d all right reserved</p>
 </footer>
 </body>
-
 </html>
