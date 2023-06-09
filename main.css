@@ -360,8 +360,18 @@ ul {
     /* Отступ слева в браузере Firefox, Safari, Chrome */
 }
 
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 header{
     display: flex;
+}
+
+footer{
+    justify-content: space-between; padding-left: 55px; padding-right: 55px
 }
 
 header>div{
@@ -370,4 +380,11 @@ header>div{
 
 .flex{
     display: flex;
+}
+
+.container{
+    width: 1216px;
+    padding-left: 12px;
+    padding-right: 12px;
+    background-color: blue;
 }
