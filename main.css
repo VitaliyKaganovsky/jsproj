@@ -395,6 +395,8 @@ header{
 
 footer{
     justify-content: space-between;
+    margin-top: 50px;
+    align-items: center;
 }
 
 i{
